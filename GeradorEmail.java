@@ -34,8 +34,6 @@ public class GeradorEmail {
             emails.put(email, nomeCompleto);
         }
 
-        scanner.close();
-
         System.out.println("\nLista de emails cadastrados:");
         emails.entrySet().stream()
                 .sorted(Map.Entry.comparingByValue())
